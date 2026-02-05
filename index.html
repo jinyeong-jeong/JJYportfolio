@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinyeong's Web Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/3779e7b516.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header class="site_header">
+            <div class="header_inner">
+                    <h1 class="logo">
+                        <a href="#">Jinyeong's Web Portfolio</a>
+                    </h1>
+                <nav>
+                    <ul class="nav_ul">
+                        <li><a href="#about">ABOUT ME</a></li>
+                        <li><a href="#project">PROJECT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- main -->
+        <section id="main" class="section_main">
+            <div class="main_inner">
+                <h1 class="main_title">
+                    <span>Jinyeong's</span>
+                    <br>
+                    <span>PORTFOLIO</span>
+                </h1>
+                <p>
+                    デザインだけでなく、実際の画面でどのように実現されるのかまで考慮しながら作業します。
+                </p>
+                <p>
+                    ユーザーが理解しやすい構造と反応型レイアウトを重視します。
+                </p>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="about" class="section_about">
+            <div class="about_inner">
+                <h2>ABOUT ME</h2>
+                <div class="about_box">
+                    <div class="img_box">
+                        <img src="./img/profile_picture.png" alt="profile">
+                    </div>
+                    <div class="about_txt_box">
+                        <div class="introduce">
+                            <h3 class="signature">
+                                <span class="hidden">JEONG JINYEONG</span>
+                            </h3>
+                            <p>
+                                こんにちは! テキスタイルデザイン専攻をもとにUI/ウェブデザインに拡張しているチョンジンヨンです。
+                            </p>
+                            <p>
+                                Figma・Photoshop・Illustratorを活用し、ブランドの世界観や目的に合った画面設計と、視覚的に完成度の高いデザインを制作することを得意としています。
+                            </p>
+                            <p>
+                               まだ学習途中の部分もありますが、デザインが実際のWeb上でどのように実装されるかを理解したいという思いから、HTML/CSSを中心にレスポンシブ対応を学んでいます。
+                               <br>
+                                JavaScript・jQueryについては現在基礎を勉強中で、今後はインタラクションや動的表現を自分の力で実装できるよう、継続して学習を深めていきたいと考えています。
+                            <br>
+                                新しいことを学ぶ過程そのものを楽しみながら、フィードバックを素早く取り入れ、より良いアウトプットへと改善していく姿勢を大切にしています。
+                            </p>
+                            <p>
+                                任された仕事には責任を持って最後までやり遂げ、細部まで丁寧にこだわることで、信頼されるデザイナーを目指しています。
+                            </p>
+                            <a href="https://www.notion.so/Profile-2fcac07f2a6280b4b452f514f7382934?source=copy_link" target="_blank">プロフィールをもっと見る<i class="fa-solid fa-circle-chevron-right"></i></a>
+                        </div>
+
+                        <div class="about_box career">
+                            <h3>EDUCATION</h3>
+                            <ul class="about_txt">
+                                <li>2025.03 - 2025.09 ウェブパブリッシング基礎課程修了(スクール受講)</li>
+                                <li>2019.03 - 2025.02 KEIMYUNG UNIVERSITY TEXTILE DESIGN科 卒業</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="about_box career">
+                    <h3>EDUCATION</h3>
+                    <ul class="about_txt">
+                        <li>2025.03 - 2025.09 ウェブパブリッシング基礎課程修了(スクール受講)</li>
+                        <li>2019.03 - 2025.02 KEIMYUNG UNIVERSITY TEXTILE DESIGN科 卒業</li>
+                    </ul>
+                </div> -->
+            </div>
+            <div class="marquee">
+                <div class="marquee_track">
+                <div class="marquee_group">
+                    <img src="./img/html.svg" alt="HTML">
+                    <img src="./img/css.svg" alt="CSS">
+                    <img src="./img/figma.svg" alt="FIGMA">
+                    <img src="./img/photoshop.svg" alt="Photoshop">
+                    <img src="./img/illustrator.svg" alt="Illustrator">
+                    <img src="./img/InDesign.svg" alt="Indesign">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAVO0lEQVR4nO2cB3hTVRvHU/CToeIABzhQQREUEEFFVtml7A2VaYGyoez5iSgKgoAooKAIH8gQ2QoooIwmnWmbtmk60uwmTZNmdUE68v+ee296m6QZN01aivb/PH2eNoSO37k55/2d99ywWPWpT33qU5/61Kc+9alPfepTl1LAeYZl5ASxTJwlAQb2vgY69o2GWnbyQ5pI0cPqSH0jFcfcWBFpbiyL0jcVR4maiqKTHxNGX38sI3pfs7SYxc1Sogc/mpDw9P3+Mx6cKLlNWfnsUQHGiD0BxojkAGOEJcDERgMjGw11HDyk5eA/uZF4OCcSjZSRaKyIQhNZFJpKovGoKBqPCWPQLCMGj6fF4InUWDyZEouneLGW5omxSc3j475uHhs78oXIyCb3+8+sWwEasPIjegWY2AcCTBEmArjtRwODa/hNZVF4xB38pDg0T4xDi3guno7j4tkYLp7jxJtasrlHW0XEj2CdPt2Q9a8NbjZmGe8sCDCxxY7Q3cOPQhOX8GNtrvw4NE+IQwsuF8/EcvFsNBfPRcajJTsere4k4PlbCXj+7wTRi9cT5re9ktmI9a+aZkwRKwOMbJUr8K7gN3YGPzMGzdJj8LggFk/wY/FkMgW/RUIcnqbhx1eB/8LfiXjxRiJeusZD6z94qlcu85a3vMRtyvpHxxQxIsAUIXEHPsAJ/EYE/OwoNJFHoak0Co+Io/FolnP4zb2A3/oaDy//wcMrl3l49bckvHqRp2h7IWk86x8XQ9TLAUb2b57ABxDw9Rw0zOPgPxoOHlZHopHKFn60S/hPMYF/MwEv/JWIl64novWfPLx8tRJ+m4tJaHs+Ga+dTcZrvyZf7HCa/xLrH5H8O6MDTGy9R/hGCv5DXsB/QhCLJ0n4cfbwY7h4NiqeWHDRMiIBrW5T8F+sAj+pCvzXf01Bu19S0P5ksqn9ieSJrAc2uNKILCcZXPUBRJnpBfzHbeHTlU4cWek4g/+CF/DfIOHz0eE4H28e5ePNI6kH2u550BZpU0zzACM7itGUY7SFH+kavjDaTZlZFX6riAQ8zxT+mWS0O52CN06loP0JPjr8TMF/60gqOv6Uio4/prI7/MB/ivVApIjdipSo6sJX2gvWIwxr/Ar4Le3gJ9rDv8LDK78n4dVLSWhzIQmvnUvG6x7gd/pRgM4HBej8vUDQbV/Ki6w6nXzOGwEmtpwRfDeC1cRLwSLgP2cL367MTCTKTDv4bS8ku4GfWgV+l+/T8M7+NHTdmybrtjutHatOpijy+QBThNRX+E29gO9KsFzBb+MF/M4/CvD2AQG6fJeGd/aloeu36ei2Jx3ddqdlf7AjtTWr7s35EYLqw49yb7c2gtWcsWBVwn/VE/xjfLz5v1S8dTgVnQ6lovMPzuG/uzsd7+3MwPvb01O776wrawJZ7TBccD3Zrdi1YHlrt6RgOcK3KTPfOJmC9scr4XdkCn9HBj74MhM9vsjgDKkL1VGAib3XW/gP5zpWOlH+tVsXguUI/81jfLxFwxe4gZ9Bwu9OwN9GwM9Ezy1C9PxUuOf+0jdwxjMVLG/t9klnguUI/zZzu7WF34EJ/G/S0e3rdLy7KwPvf5WB7tvt4ff6VIjen2Shz6assfcJftTLAaYIY63YbZy/7NYJfGul8/b3AnTZn4Z39lLw3/06He95gv9xFvpsEBr6bRDX/qIcYGRfYl7jM7TbVM+C1dIbwXK0Wxc1/tvfp9Hwu1WBn+kSft+NWei3XoT+a0UX7sf+TvXt1ipYj7otM32wWy8EqwJ+V6bwN2Uh8L9Z6LtBhH7rROi/RoQBq8QYtEI0onbgK7lN3dX7dvC9bR8meWm3DoLVxm2Nz3cnWFXhf5mJD7Zmosfnmej5mRC9NguJ+d4p/IErxBgYLhZ3XyavhXanib2qNuz2WVu7veNfu33bFr6TMtMRfm8P8Actk2DwUgkGL5aE18YOp9IbwfLKbrk1aLcMa/wK+D0/F6KXS/hie/hLJBiySIrgBRJV4AxJ45obAKqH671gOcIXVNdueST8KoJlC99BsBjbrRV+D0/wV4sxYKUYA5eLMShcgiAavhRD58kwdI5sbs3ABxo4a6A7bR9WwJfWoN1edC1YHRgLloPd2sL/REhWOoEbs9B3vQj91lbCH7RcjMFO4A8Lk2H4bGkWi4UA/w+Agd2vKnwOBd9pmVkV/lOCOPTM4mO6VIh5MjF6C/ie4XshWNWyWzc1viP8gSR8iWv4c2QYOVuOkaHyPn7nH2CM+Km6dvtMRhzWqWWQmu+BSEF5GdQlJeTnUfkFeJ/Hp+C7FSwf7XZvpd0yESxb+AMYwB8xR07CHzVLjtGhih/8Sx+RTWjr9VKw3hMng3+viIStKyslr/yWCVSls0YiIx/PMZegc0yK1+3Ddrbtwwr4P/lut4GVgmUPf6kEQYslGLJQiuD5Ugyd6xQ+xnykME2Y4M+SlDgu6KXdNsuMwVh5OorLy0nI3KJCtOfzqghWetFd8t+Pq/IYw2/3K3PB8t5uXZeZjvCHO4E/9iMFxs3MxoQZimF+4080193arZP24Wh5Ou5aKPjJxUVok5xQRbCe48TjnEZPPievpNQ5fGv70Fu7dSlYtvCtguXKbu3hS2n4wwj4c2QYQcz3syj4Y2zgj5+RjQnTFV/5bQAaGCOSSfgMD8e+K0pCofXK15aWWq985+3D46o88nmlFotTwfKb3e7w3m4d4Q91Bj9UTkw5GDtTgXEzsjF+ejYmTs/GpKnKRP/QL+A80zCPbWFqt8+mxyH1XjEqMlUstLdbh0rn7zwT+Tzl3ZJqtw/t7NaDYPVwK1jO4QdXwA+zh2+d72n4Ewj405QEfEz6MLs8JETZwmf+DXWcIG/ah7u1Khr+Gb3Ord2+x+HDXG4hn7tfnMusfVgB/3AN2q2bMnOE/WLrFP7kKUp8+KEKH36YPdDnAXhIw1ni0W6tgtUpIwn3rPN+icWCbikpLmv8NreSwNblk8/lGYvQ/s9k5/B9bB+6tVsHwSLsdrCX8Me7gD8lRIWpk3MW+jwA/1FH7qPt1kP78IReS1/9RzQat4J1NkePe+UW/CDRUPB/85fd2rQPK+DTlU417dYqWJ7gh9jDx9RJqm98HoCHVZzrTA7Hvi5IgNlCTSdEeqbwncO3VjrBkRnoeD3Fv3brpWBV2G3IZgWGrpAyhj+OAfzpk3IwY0LOnz4PQOPsqBQmvdtNKgUNP6moiGH7kOdd+9AW/v7q222FYM3ekQ15LmXkelMZFmxVUfBdC5ZNmUnBn0zCV9Hwp1XAn6jGzAk5ST4PQBN5lJTJ4diYggJ6ADZLs/1zOPaYe8HyxW4HrxZDpDTjyGUD0qTUFgknscglfPsaPxuTPMJX46NxarHvAyCJ1nk6HPsKL4FcdCsyNDnd695tO2ul0+EEH0tuy/G3Ih/yfDM0RaWIUhZiwVV5lfbhxqsq3MkqwLpLKlKwen6ZiY8v5CBRVgyFrgSLDispu7VWOusP50CqLsGOU1rM/0pJ/q5hXyix9xcd+blQZraz2xnLlDh10YQsiRkGUzmyVaW4cq0AofNy7OBPdQI/dLwaoWNztT4PwCOiKLOnDtaY9AwafpnFgjYcnmv4v7u22/d+TQNbRb2SIpWF2Bmnxpl0A4hKlfiYcVZKwx97REw+RuRQpA7B34jAlVB7ThXZdzWPhh+6S4HSMuo/fHFMgy2HNeTnW3/SYs/PlAzeiimka/wte7QoKCwnPy5eLcCJMyZkK0vJ5/FT77mE/5EV/qxxuZg1NveezwPwmDDa7Kl9GC6W0n90VvE9Cr6X7cNOp1KRqKEAHkjS2k07Qh01ReyP1lB2uzsdn/6RQ//MbVdzoTKUkFd9kozaWyKy6KCSFqxDV6ktD+KFOnGDHBu/yyW/zs4twZ9satB3H9KR8Lfvz0NZmQVaXRnmr8ih7HZaNnbs0tHfY9pU9/Bnj83FnDEaPwxARozObe82movt8kr54poKq9U+3JtEAUnX3UVn63kdYrHdzlaDuG7NZRZMPSmla/zT8Qb6Z+bml4InK0bQVhFihNQgGgrLMGBDpWD9lUBBlqlLMGSxFONWyHH3noUGes9swcrP1Th/NZ/8msiWnXn0Yjt7Xg6U1ldAdPRdstKZNomCP5OGn0vDDxujwdzRGt+noGZpMVISvtP2IWW326TUfEpKlanI68Ox3U4KkG8uo67mqBy7MrPvj5nYFZGL8UfFdoLFU1Rud0i0ZgzeKsLQrWKUWKeZK3H5lXa7XIxoPjUw8WnFdJm55386GrZjlDmlVQRry5Y8HPrRiGkhVvgTc6jFlpjvqSkHcyrhY94ore+L8OMpMSme2oefiLLpX1xjLnHfu3UiWPNvUH0BIsN/ybKr8c/xjeTj30ZoaPg9t2eiyEwZ971SC6btl5F2+9lpNf19Nv+ca2e3iRnU1PR3bCFd44eEK2DML4NSXYrb0UU4eMwAhZIqS2/cLLSDv2qVBiZTOe7etWD6ZGLKsYdPTTm5CButwdxRGswbqcWC4Vrfy9AnkmOuezocG8oX2V09fe+kMRKsDtYaf1t05XweeCSDhv/hKQn9+MbLKtpuQw5UrjmnIg10mXkhmtrYI67q8ZtltN1O3iiH1kC9wiITi6gyM0wGDrcIBUXlCFudQ9stAZjI+UsFdoIVG0sNoERU4hH+fAL+CC0WDtP4LmJP8eL2ebr18+2IFLL6qchnAiXj9mHXowJEKCodIvhYFm23l1Kpq59IyCEJWeN/9JMMCj11lRKZe0BBCxZfSkFSaEro9uH0TxSQKEvoqUYoNZN2e/yikVxoN+/S2tmt3jpQt+8U0fDDl+SijHoYt/4qpuHbLLZV4Q/Pw6JhWt+3IlokcJcwufXzlpbaWCOivluCzpf5Hu32g5/TyBqfqPVLrTXlySQ9KVhEjW87PW+5rMapGAM5x98tof7FXGrBwE0i2m6zlGZqGjSUYunXKhz+TY/C4nJEJxfj7DXq1WEuseC3G/koKwd2/6CrIlg3blJrRVGRBUuX5mLuHDWEmZUDfupovlP486rAz8PiYK3vm3FPc7lBTA7HjorMtAN2XWVC+/MpTg/HdjySijW3sknwOYUlGH4iC7sjqSqISKG5nKzx/xBQ0OiBNZVi3S8qxGZRkH7nmuzs9iLb/vnFd8tx8Iwew+fLsHF35fcnph2izndmt0S1o1ZT1U5pqQVmswVSSQl0edRL4OyJAo/wFw/Lw5KheQgPyvN9O/q5hISnn43kWpgcjv0mo3IRJJKiL0bYbSm6/CJAx+OpCDqXic2RKqRoqQqGqyrCoKNC2m7nn5fjQooR55ONCD0uwwfbM7HrugZ/pOTjy8u5GLhVRG4t7LmsxU839Aj6r9iuiTJyrQzHrhpwPaaQtNvxy+VU75bYUAuT4/LNApy5YsKsFSq3WwuhoTk4dSIfkey7OHU8H3Om5eLsSWqaFKaV0PDnOsBfZAN/yZC88oUDTM1Z/khLdnwyk8OxbS8kYW9aLm2otim3WSMKzOXYGa1G14Pp7nu3PrQPgz21D63wJzrZ13EmWHMmqRF1h1pjjn2X7xb+0mAdcfUnsPyVVnfiv/bmcOyYa0L8ITfhnrUmpwYA5JW/MyYXvYlKh+7dpvvtcKxd+9AB/mhnvdtp2XSZScCfQsLPcWK3lYK1+xMjvttmImp8Ev5CO/g6Ev6yITosD9L7rynf6lb8yOrYbecTqQg+L8Swc0K8ezTNq/ZhD28Oxy613cf3rndLwrfZx6cFywG+g2A5hR9eCR/LBuqG+m0AiLf5euFGorECvtvDsafu7+HYYdXo3drCn+HMbitqfCv8BR7gLx+sNy7r7ud7BV68lnioyq2fbgTrTV8Px26ufvuQSe82hAF8p3ZLVjpaqswcloelDvBXDNZj1SD9QZa/0/pqYt/auPWzl8fDsd71bhm3D5nabQX8isV2iA7LgnTEVY+VJHwDVvXX9/b7ALA2ocErl3gif9z6WTOHY2Vetw+nOnawGNmtTaVDwqeu+pWD9Fg10IBVA/TCmjmezmKxXr3Im+/xcKwfbv0MdOjd2sFncDh2rNe9W+fwXQmWK/irBxiwtp8xjFVTId5dsO2ZZCVttzVyODaLslsfD8d607t1aKJUqfGdwV/uDH5/o2LxENTs2xe0O528wq+3fm728XDsbFeHY5kJlif4ixjAX0PBx9q+piWsmk7XS9ym7Y+nSOrs4dgZVe12CgP4YQzgL3ML35C1KRA1eIOeTdr/nBrsy62fvfxmtwondutEsGzs1k37kIndWuEbsNoG/rp+Rqzva/Lf/QBM8tbh1Iu1c+untEqNz8RuHWt8u/ZhNe2WqvGrwt/Q13iOVdvpcID/UqeDAoPPdru2Rg/HerbbUczs1hn89SR8k35Db939eS+5TgcFw7vsF1icCVYVu70Ph2OnVcduKxZbG/grXcI3Wtb3yR/Dup/psk+wxxZ+dQ7HDmJw62dt2K1jjb/ctswk4RuxrvLKx4Y+xl2s+x3iTU277k7n1MKtn/CX3TprH3oSrDX0YmvEhkATNgQa72zqgIdZdSFdt4kef39HOq8mb/0cWw27DfWX3TrC72Pkb+purCNv2mdN950Zz3ffmiGtyVs/xzMULD/brR38jb1Nik099XXzjb17fJrWrsdnmTK/3PoZWtVuJ94Hu62Av5GA38ck29TL9DqrLqf3FkHLPh8Lk3yx29Gu2od+tVvGgmWFb0zd0Lu4jr91sTXdN8mfClwv4ni023k+tg99sNtwBvA3VMDvbbyztpfxSdaDlMBNNx/qt1q0bcAqkcWft35OcWW345zbbXUEqxK+0bKxt3FPnal2qpMB4eJRg8LF+lq325HWxdYG/lLmdkssuKaPA40TWP+EDF0gbj1kkeRibdntfHftQ492S1755+7b9kJNJniedPjQMJnYX3Y7qxrtw+WOgmVrt4EmUa3vatZ2JiyTNxkxWxY+apYsu3q3ftaI3So29jEtrbX9/LqQIYszG42ZqZg7bmZ2li/tQ9/s1iBc388Y9kAvsv7IhBmqrhOnZe+ZNEWZV9N2u6a/wbimv+Ho2kDjwBo7vfCgZsYMSePJk3OGTQlR7po6KSdx2kRVeXXtlj6lNkhXvnKQLmHVQP3Otf10Q/9V04yvCQlRtpg5QT3oo3G5C0PHqb+dPTb32pzRGl7YKI1o3kiNbv4IjXnBcI154XCtbtGwPNGS4Dze0mDdn+FDdN8uD9IvXBmUN3Ctv46I16c+9alPfepTn/rUpz71qQ/LP/k/lgZudHGiAjEAAAAASUVORK5CYII=" alt="canva">
+                </div>
+                <div class="marquee_group">
+                    <img src="./img/html.svg" alt="HTML">
+                    <img src="./img/css.svg" alt="CSS">
+                    <img src="./img/figma.svg" alt="FIGMA">
+                    <img src="./img/photoshop.svg" alt="Photoshop">
+                    <img src="./img/illustrator.svg" alt="Illustrator">
+                    <img src="./img/InDesign.svg" alt="Indesign">
+                    <img src="data:image/png;base64,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" alt="canva">
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- project -->
+        <section id="project" class="section_project">
+            <div class="project_inner">
+                <h2>Project</h2>
+                <ul class="project_list">
+                    <li>
+                        <a href="https://www.notion.so/Project-1-2fcac07f2a6280868ea6fd3faa87427f?source=copy_link" target="_blank">
+                            <img src="./img/project1.jpg" alt="板室温泉 大黒屋 サイトイメージ">
+                        </a>
+                        <div class="project_txt">
+                            <h5>板室温泉 大黒屋 ホームページ リデザイン</h5>
+                            <p>Website Redesign｜UI/UX・リデザイン・レスポンシブ設計（Web/Tablet/Mobile）</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://www.notion.so/Project-2-2fcac07f2a628024859bd85d6a95e4cb?source=copy_link" target="_blank">
+                            <img src="./img/project2.jpg" alt="Benidrop Landingpage">
+                        </a>
+                        <div class="project_txt">
+                            <h5>Benidrop Landing Page</h5>
+                            <p>ブランド企画｜UIデザイン・ランディングページ設計</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://www.notion.so/Project-3-2fcac07f2a6280a0b067c0cf07df17d8?source=copy_link" target="_blank">
+                            <img src="./img/project3.jpg" alt="Instaeventpage">
+                        </a>
+                        <div class="project_txt">
+                            <h5>Instagramイベントページ</h5>
+                            <p>SNSビジュアルデザイン｜Instagramイベントページ</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://www.notion.so/Project-4-2fcac07f2a62806193dbf0fa5d439c00?source=copy_link" target="_blank">
+                            <img src="./img/project4.jpg" alt="kurasushi app">
+                        </a>
+                        <div class="project_txt">
+                            <h5>くら寿司 アプリ UX/UI REDESIGN</h5>
+                            <p>UX/UI｜リデザイン・アプリ画面設計・ユーザー体験改善</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section id="contact" class="section_contact">
+            <footer class="contact_center">
+                <div class="footer_inner">
+                    <div class="contact_txt_1">
+                        <p>一緒に成長できるWebデザイナーをお探しですか？</p>
+                    </div>
+                    <div class="contact">
+                        <p class="word">
+                            <span class="letter">j</span>
+                            <span class="letter">y</span>
+                            <span class="letter">0</span>
+                            <span class="letter">0</span>
+                            <span class="letter">1</span>
+                            <span class="letter">0</span>
+                            <span class="letter">0</span>
+                            <span class="letter">2</span>
+                            <span class="letter">@</span>
+                            <span class="letter">n</span>
+                            <span class="letter">a</span>
+                            <span class="letter">v</span>
+                            <span class="letter">e</span>
+                            <span class="letter">r</span>
+                            <span class="letter">.</span>
+                            <span class="letter">c</span>
+                            <span class="letter">o</span>
+                            <span class="letter">m</span>
+                        </p>
+                    </div>
+                    <div class="contact_txt_2">
+                        <p class="mb20">
+                            ご不明な点がございましたら、いつでもお気軽にご連絡くださいませ。
+                            <span class="m-block">迅速にご返信いたします!</span>
+                        </p>
+                        <a href="mailto:jy001002@naver.com" class="shortcut_arrow">
+                            메일보내기 
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        <p class="copyright_txt">
+                            &copy;2026 jinyeong_jeong.com
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <a href="#main" class="return_top">
+            <!-- <span class="hidden">RETURN TOP</span> -->
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+</html>
