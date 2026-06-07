@@ -10,11 +10,11 @@ $(function(){
 
     if(!contactPlayed && scroll > contactTop - winH + 100){
 
-      $('.letter').each(function(i){
-        setTimeout(() => {
-          $(this).addClass('on');
-        }, 60 * i);
-      });
+          $('.letter').each(function(i){
+      setTimeout(() => {
+        $(this).addClass('on');
+     }, 60 * i);
+    });
 
       contactPlayed = true;
     }
@@ -88,3 +88,19 @@ $('.main_title span').each(function(i){
   }, 200 * i);
 });
 
+// $(window).on('load', function() {
+//     const track = $('.marquee_track');
+//     const group = $('.marquee_group').clone();
+//     track.append(group); // 혹시 그룹이 2개가 안 되어 있다면 강제로 복제
+// });
+
+$(window).on('load', function() {
+    const $track = $('.marquee_track');
+    const $group = $('.marquee_group');
+    
+    // 1. 그룹의 너비를 계산
+    let width = $group.outerWidth(true); 
+    
+    // 2. 트랙의 너비를 그룹 2개의 합으로 설정 (혹은 필요에 따라 조정)
+    $track.css('width', width * 2);
+});

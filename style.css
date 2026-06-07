@@ -218,32 +218,29 @@ html {
 .marquee_track {
     display: flex;
     width: max-content;
-
-    gap: clamp(60px, 10vw, 160px);
-
     animation: marquee 24s linear infinite;
 }
 
 .marquee_group {
     display: flex;
     align-items: center;
-    gap: clamp(60px, 10vw, 160px);
-
     flex-shrink: 0;
     width: max-content;
 }
 
-.marquee_group img{
-     height: clamp(48px, 6.5vw, 80px);
-     flex: 0 0 auto; 
+.marquee_group img {
+    height: clamp(48px, 6.5vw, 80px);
+    margin-right: clamp(60px, 10vw, 160px); /* 오른쪽 여백을 균일하게 설정 */
 }
 
 @keyframes marquee {
-    from {
+    /* 0%에서 100%까지 끊김 없는 이동 */
+    0% {
         transform: translateX(0);
     }
-    to {
-        transform: translateX(-100%);
+    100% {
+        /* 정확히 한 세트의 그룹 너비만큼만 왼쪽으로 이동 */
+        transform: translateX(-50%);
     }
 }
 
